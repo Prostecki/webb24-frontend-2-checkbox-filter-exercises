@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .dropdown-container {
+  position: relative;
+  text-align: center;
+  width: 200px;
+  background-color: grey;
+}
+
+header button {
+  border: 0.5px solid black;
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+header button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.years-container {
+  padding: 15px 0;
+  position: absolute;
+  width: 100%;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: grey;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(-10px); /* Slide up when hidden */
+  transition: opacity 0.4s ease, max-height 0.4s ease, transform 0.4s ease;
+}
+
+.show {
+  opacity: 1 !important;
+  max-height: 200px; /* Adjust based on content size */
+  transform: translateY(0); /* Reset slide when shown */
+}
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 35px;
+}
+
+.checkbox-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 50px 0;
+  align-items: center;
+}
+
+.sort-button {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border: none;
+  background: grey;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #00000066;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sort-button:hover {
+  transition: 0.5s;
+  color: yellow;
+  background-color: black;
+}
+
+.students {
+  padding: 50px;
+  max-width: 100%;
+  background-color: grey;
+  border: 0.5px solid yellow;
+  text-align: center;
+  & h3 {
+    margin: 20px 0 20px;
+  }
+}
+.cities-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="dropdown-container">
+        <button id="study-button">Show study years</button>
+        <div class="years-container">
+          <label
+            >1 year
+            <input type="radio" name="years" value="1" />
+          </label>
+          <br />
+          <label
+            >2 year
+
+            <input type="radio" name="years" value="2" />
+          </label>
+          <br />
+          <label
+            >3 year
+
+            <input type="radio" name="years" value="3" />
+          </label>
+        </div>
+      </div>
+    </header>
+    <main class="wrapper">
+      <h1 style="text-align: center; margin: 20px 0 20px">Education</h1>
+      <div class="checkbox-container">
+        <label for="frontend">Frontend</label>
+        <input
+          type="checkbox"
+          name="education"
+          value="Frontend"
+          id="frontend"
+        />
+        <br />
+        <label for="backend">Backend</label>
+        <input type="checkbox" name="education" value="Backend" id="backend" />
+        <br />
+        <label for="Full Stack">Full Stack</label>
+        <input
+          type="checkbox"
+          name="education"
+          value="Full Stack"
+          id="dotNet"
+        />
+        <br />
+        <label for="ios">UX Design</label>
+        <input type="checkbox" name="education" value="UX Design" id="ios" />
+        <br />
+        <label for="c#">C#</label>
+        <input type="checkbox" name="education" value="c#" id="c#" />
+        <br />
+        <label for="teacher">I am teacher, I promise</label>
+        <input type="checkbox" name="education" value="teacher" id="teacher" />
+      </div>
+      <h1 style="text-align: center; width: 100%; margin: 20px 0 20px">
+        Cities
+      </h1>
+      <div class="cities-container">
+        <label for="Stockholm">Stockholm</label>
+        <input type="radio" name="city" value="Stockholm" />
+        <label for="Gothenburg">Gothenburg</label>
+        <input type="radio" name="city" value="Gothenburg" />
+        <label for="Malmo">Malmo</label>
+        <input type="radio" name="city" value="Malmo" />
+        <label for="Uppsala">Uppsala</label>
+        <input type="radio" name="city" value="Uppsala" />
+        <label for="Lund">Lund</label>
+        <input type="radio" name="city" value="Lund" />
+      </div>
+      <div class="button-wrapper">
+        <button class="sort-button">Show students!</button>
+      </div>
+      <div class="students"></div>
+    </main>
+  </body>
+</html>
